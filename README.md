@@ -1,2 +1,111 @@
 # Galaxia--amor
 Love
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Mi Galaxia Para Ti ✨</title>
+<style>
+    *{
+        margin:0;
+        padding:0;
+        box-sizing:border-box;
+        font-family: 'Segoe UI', sans-serif;
+    }
+
+    body{
+        background: radial-gradient(circle at top, #0b0f2b, #000);
+        height:100vh;
+        overflow:hidden;
+        display:flex;
+        justify-content:center;
+        align-items:center;
+        color:white;
+        text-align:center;
+    }
+
+    .stars{
+        position:absolute;
+        width:100%;
+        height:100%;
+        background:url('https://i.imgur.com/9QpQpJp.png');
+        animation: moveStars 60s linear infinite;
+        opacity:0.5;
+    }
+
+    @keyframes moveStars{
+        from{background-position:0 0;}
+        to{background-position:-2000px 2000px;}
+    }
+
+    .galaxy{
+        position:relative;
+        z-index:2;
+        background: rgba(255,255,255,0.05);
+        backdrop-filter: blur(8px);
+        padding:40px;
+        border-radius:25px;
+        box-shadow:0 0 30px rgba(255,255,255,0.2);
+        max-width:350px;
+    }
+
+    h1{
+        font-size:1.8em;
+        margin-bottom:10px;
+    }
+
+    p{
+        font-size:1em;
+        opacity:0.9;
+        margin-bottom:20px;
+    }
+
+    .heart{
+        font-size:2.5em;
+        animation: pulse 1.5s infinite;
+    }
+
+    @keyframes pulse{
+        0%{transform:scale(1);}
+        50%{transform:scale(1.2);}
+        100%{transform:scale(1);}
+    }
+
+    audio{
+        margin-top:15px;
+        width:100%;
+    }
+
+    footer{
+        margin-top:15px;
+        font-size:0.7em;
+        opacity:0.6;
+    }
+</style>
+</head>
+
+<body>
+
+<div class="stars"></div>
+
+<div class="galaxy">
+    <div class="heart">💖</div>
+    <h1>Mi universo eres tú</h1>
+    <p>
+        No eres parte de mi galaxia...  
+        tú eres la galaxia entera ✨  
+        Te amo más de lo que el universo puede medir 💫
+    </p>
+
+    <audio controls>
+        <source src="AQUI_VA_TU_CANCION.mp3" type="audio/mpeg">
+        Tu navegador no soporta audio.
+    </audio>
+
+    <footer>
+        Hecho con amor 💕
+    </footer>
+</div>
+
+</body>
+</html>
